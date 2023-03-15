@@ -1,0 +1,10 @@
+캐릭터	A	Option	1	FALSE
+캐릭터	B	Option	1	FALSE
+캐릭터	C	Option	1	FALSE
+캐릭터	D	Option	1	FALSE
+캐릭터	E	Option	1	FALSE
+배트	1	Option	1	FALSE
+배트	2	Option	1	FALSE
+배트	3	Option	1	FALSE
+배트	4	Option	1	FALSE
+배트	5	Option	1	FALSE
