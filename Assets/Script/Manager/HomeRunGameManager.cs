@@ -23,9 +23,15 @@ public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
 
     public bool IsPlaying = true;
     public bool isSwing;
+    public bool isAuto = false;
 
     private float distanceFromBallToStrikeZone = 10;
 
+    public void AutoBtn()
+    {
+        isAuto = !isAuto;
+    }
+  
     public enum eHIT_TYPE
     {
         BASE_1,
