@@ -24,8 +24,8 @@ public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
     public HitCoin hitCoin;
 
     public bool IsPlaying = true;
-    public bool isSwing;
-    public bool isAuto = false;
+    public bool isSwing;   
+
 
     private float distanceFromBallToStrikeZone = 10;
 
@@ -150,10 +150,5 @@ public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
         hitball.Hit(hitType);
         hitCoin.SetCoin(hitType);
         hitEffect.ShowHitEffect(hitType);
-    }
-    public void AutoBtn()
-    {
-        isAuto = !isAuto;
-    }
-
+    }    
 }
