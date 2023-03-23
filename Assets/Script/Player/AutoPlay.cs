@@ -11,6 +11,6 @@ public class AutoPlay : MonoBehaviour
 
     void Check()
     {
-
+        HomeRunGameManager.swing();
     }
 }

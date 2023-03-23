@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
 {
+    public static Action swing;
+
     public Animator hitterAnimator;
 
     public Text tDistance;
@@ -27,11 +29,6 @@ public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
 
     private float distanceFromBallToStrikeZone = 10;
 
-    public void AutoBtn()
-    {
-        isAuto = !isAuto;
-    }
-  
     public enum eHIT_TYPE
     {
         BASE_1,
@@ -44,6 +41,7 @@ public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
     
     private void Awake()
     {
+        swing = () => { OnSwing(); };
         SetInstance();
     }
     private void OnEnable()
@@ -153,4 +151,9 @@ public class HomeRunGameManager : SingletonComponent<HomeRunGameManager>
         hitCoin.SetCoin(hitType);
         hitEffect.ShowHitEffect(hitType);
     }
+    public void AutoBtn()
+    {
+        isAuto = !isAuto;
+    }
+
 }
