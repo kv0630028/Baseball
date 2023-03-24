@@ -8,12 +8,13 @@ public class AutoPlay : MonoBehaviour
     
     void Update()
     {
-        
+        if(isAuto == true)
+        HomeRunGameManager.swing();
     }
 
     void Check()
     {
-        HomeRunGameManager.swing();
+        
     }
 
     public void AutoBtn()
