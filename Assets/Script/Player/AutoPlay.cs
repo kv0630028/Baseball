@@ -17,6 +17,12 @@ public class AutoPlay : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigger Ãæµ¹");
+    }
+
+
     public void AutoBtn()
     {
         isAuto = !isAuto;
