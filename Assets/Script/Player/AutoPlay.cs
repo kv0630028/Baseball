@@ -9,20 +9,14 @@ public class AutoPlay : MonoBehaviour
     void Update()
     {
         
-    }
-
-    
+    }    
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isAuto == true)
-        {
-            if (other.name == "Ball")
-            {
-                HomeRunGameManager.swing();
-            }
-        }
-        //Debug.Log("Trigger Ãæµ¹");
+        if (isAuto == true && other.name == "Ball")
+        {         
+            HomeRunGameManager.swing();
+        }        
     }   
 
   
