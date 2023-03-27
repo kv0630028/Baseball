@@ -8,26 +8,24 @@ public class AutoPlay : MonoBehaviour
     
     void Update()
     {
-        Check();        
+        
     }
 
     
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger 충돌");
-    }
-
-
-
-    void Check()
-    {
         if (isAuto == true)
         {
-            HomeRunGameManager.swing();
+            if (other.name == "Ball")
+            {
+                HomeRunGameManager.swing();
+            }
         }
+        //Debug.Log("Trigger 충돌");
+    }   
 
-    }
+  
 
     public void AutoBtn()
     {
